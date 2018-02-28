@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.os.Handler;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.widget.Toast;
 
@@ -146,7 +147,7 @@ public class DrawThread extends Thread {
                     canvas.drawText(points+"", canvas.getWidth() - 100, 70, p);
 
                     if (points >= 100){
-
+                        Log.e("Loading","FILE_NOT_FOUND");
                     }
 
                 } finally {
